@@ -1,0 +1,141 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FAFAFA;
+	font-family: helvetica;
+}
+
+#wrapper {
+	display:grid;
+	width: 900px;
+	height: 650px;
+	grid-template-areas: 
+		"image main_section"
+		"image sign_up"
+		"image get_the_app"
+		"end_page end_page";
+	grid-template-columns: 1fr 1fr;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.phones {
+	grid-area: image;
+	width: 450px;
+}
+
+.main_section {
+	grid-area: main_section;
+	margin: 10px;
+	border: 2px solid #F3F3F3;
+	width: 400px;
+	background-color: white;
+	justify-content: center;
+}
+
+button {
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	padding: 8px;
+	display: block;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.continue_with_fb {
+	background-color: #3E99EC;
+}
+
+.log_in {
+	background-color: #C4E1FA;
+}
+form {
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
+}
+
+.continue_button {
+	grid-area: continue_button;
+}
+
+#instagram_image {
+	width: 200px;
+	align-self: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.log_in_with_fb {
+	display: block;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: grey;
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+
+input {
+	box-sizing: border-box;
+	width: 300px;
+	margin: 15px;
+}
+
+.sign_up {
+	grid-area: sign_up;
+	margin: 10px 10px 10px 10px;
+	border: 2px solid #F3F3F3;
+	width: 400px;
+	background-color: white;
+	text-align: center;
+}
+.get_the_app {
+	grid-area: get_the_app;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.app {
+	width: 135px;
+}
+
+
+.bottom	{
+	grid-area: end_page;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.bottom p {
+	display: inline;
+	font-size: 10px;	
+	margin: 5px;
+}
+
+.copyright {
+	color: grey;
+	text-align: right;
+}
+
+	@media only screen and (max-width: 850px) {
+	#wrapper {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;		}
+
+		.phones {
+			display: none;
+		}
+	}
+
